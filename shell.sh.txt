@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'VARIABLE_NAME', defaultValue: 'world', description: 'Enter your name')
+}
+
+stages {
+     stage('Name') {
+         steps {
+             script {
+                 echo "hello ${params.VARIABLE_NAME}"
+
+              }
+          }
+       }
+}
