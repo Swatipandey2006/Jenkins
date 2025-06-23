@@ -1,0 +1,3 @@
+echo "Type your name"
+read name
+echo "hello $name"
